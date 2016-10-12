@@ -24,7 +24,7 @@ return array(
     'normal_class' => array(
 		'type'    => 'select',
         'ui' => array(
-			'title'   => __( 'Width', 'si-custom-elements' ),
+			'title'   => __( 'Width (all)', 'si-custom-elements' ),
 		),
         'options' => array(
 			'choices' => array(
@@ -41,7 +41,7 @@ return array(
     'xs_class' => array(
 		'type'    => 'select',
         'ui' => array(
-			'title'   => __( 'Width on XS', 'si-custom-elements' ),
+			'title'   => __( 'Width < XS (400px)', 'si-custom-elements' ),
 		),
         'options' => array(
 			'choices' => array(
@@ -58,7 +58,7 @@ return array(
     'sm_class' => array(
             'type'    => 'select',
             'ui' => array(
-                'title'   => __( 'Width on sm', 'si-custom-elements' ),
+                'title'   => __( 'Width < sm (500px)', 'si-custom-elements' ),
             ),
             'options' => array(
                 'choices' => array(
@@ -75,7 +75,7 @@ return array(
     'md_class' => array(
             'type'    => 'select',
             'ui' => array(
-                'title'   => __( 'Width on md', 'si-custom-elements' ),
+                'title'   => __( 'Width < md (650px)', 'si-custom-elements' ),
             ),
             'options' => array(
                 'choices' => array(
@@ -92,7 +92,7 @@ return array(
     'lg_class' => array(
             'type'    => 'select',
             'ui' => array(
-                'title'   => __( 'Width on lg', 'si-custom-elements' ),
+                'title'   => __( 'Width lg (900px)', 'si-custom-elements' ),
             ),
             'options' => array(
                 'choices' => array(
