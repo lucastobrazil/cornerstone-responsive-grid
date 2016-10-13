@@ -3,6 +3,8 @@
 /**
  * Shortcode handler
  */
+$id        = ( $id        != ''     ) ? esc_attr( $id ) : '';
+$style     = ( $style     != ''     ) ? $style : '';
 
 $title        = ( $title        != ''     ) ? $title : 'Set a Title';
 $normal_class = ( $normal_class != ''     ) ? $normal_class : '';
@@ -12,24 +14,23 @@ $md_class     = ( $md_class     != ''     ) ? $md_class : '';
 $lg_class     = ( $lg_class     != ''     ) ? $lg_class : '';
 
 // Combine grid classes into one string
-// @todo - write a function to do this. i'm sure it exists'
-$grid_classes = ' grid-item ' . $normal_class . ' ' 
-    . $xs_class . ' ' 
-    . $sm_class . ' '
-    . $md_class . ' '
-    . $lg_class . ' ';
-
-$id        = ( $id        != ''     ) ? 'id="' . esc_attr( $id ) . '"' : '';
-$class     = ( $class     != ''     ) ? esc_attr( $class ) . $grid_classes : $grid_classes;
-$style     = ( $style     != ''     ) ? 'style="' . $style . '"' : '';
+$grid_item_classes = implode(' ', [
+    'grid-item', 
+    $normal_class, 
+    $xs_class, 
+    $sm_class, 
+    $md_class, 
+    $lg_class,
+    esc_attr( $class )
+]);
 
 $atts = cs_atts( array(
 	'id' => $id,
-	'class' => $class,
+	'class' => $grid_item_classes,
 	'style' => $style
 ) );
 
-$output = "<div {$id} class=\"{$class}\" {$style}>"
+$output = "<div {$atts}>"
             
           . $content . '</div>';
 
