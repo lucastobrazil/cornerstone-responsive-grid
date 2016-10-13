@@ -1,0 +1,54 @@
+// max width
+.widthMax(XXS, @rules) {
+    .widthMax(@breakPointXXS, @rules);
+}
+
+.widthMax(XS, @rules) {
+    .widthMax(@breakPointXS, @rules);
+}
+
+.widthMax(S, @rules) {
+    .widthMax(@breakPointS, @rules);
+}
+
+.widthMax(M, @rules) {
+    .widthMax(@breakPointM, @rules);
+}
+
+.widthMax(L, @rules) {
+    .widthMax(@breakPointL, @rules);
+}
+
+.widthMax(@width, @rules) when (isnumber(@width)) {
+    @media (max-width: @width) {
+        @rules();
+    }
+}
+
+// min width
+
+.widthMin(XXS, @rules) {
+    .widthMin(@breakPointXXS, @rules);
+}
+
+.widthMin(XS, @rules) {
+    .widthMin(@breakPointXS, @rules);
+}
+
+.widthMin(S, @rules) {
+    .widthMin(@breakPointS, @rules);
+}
+
+.widthMin(M, @rules) {
+    .widthMin(@breakPointM, @rules);
+}
+
+.widthMin(L, @rules) {
+    .widthMin(@breakPointL, @rules);
+}
+
+.widthMin(@width, @rules) when (isnumber(@width)) {
+    @media (min-width: @width) {
+        @rules();
+    }
+}
