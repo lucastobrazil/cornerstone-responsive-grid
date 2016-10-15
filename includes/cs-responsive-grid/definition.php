@@ -13,7 +13,7 @@ class CS_Responsive_Grid {
 
 	public function ui() {
         return array(
-            'title'       => __( 'SI Responsive Grid', 'cs-responsive-grid' ),
+            'title'       => __( 'CS Responsive Grid', 'cs-responsive-grid' ),
             // 'supports'    => array( 'class', 'style' ),
             // 'renderChild' => true,
         );
