@@ -16,6 +16,11 @@ For each `grid-item`, you can specify the following width options:
 - 'inherit' - basically the default. Items will grow/shrink to accommodate surrounding items
 - 'fit' - a 'reset' if you want to tell it to just fill out the width when next to another grid item
 
+For the `grid` itself, you can set:
+- Vertical Alignment of `grid-items`
+- Horizontal Alignment of `grid-items`
+- Toggle grid padding/gutters on or off
+
 # Responsive, You Say?
 After specifying the default width (desktop-first) for each `grid-item`, you can add screen size-specific widths.
 
