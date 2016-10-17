@@ -38,39 +38,22 @@ return array(
 	        )
         )
 	),
-    'xs_class' => array(
-		'type'    => 'select',
+    'lg_class' => array(
+        'type'    => 'select',
         'ui' => array(
-			'title'   => __( 'Width XS (480px & Smaller)', 'si-custom-elements' ),
-		),
+            'title'   => __( 'Width LG (980px - 1199px)', 'si-custom-elements' ),
+        ),
         'options' => array(
-			'choices' => array(
+            'choices' => array(
                 array( 'value' => '',   'label' => __( '(inherit)', 'si-custom-elements' ) ),
-				array( 'value' => 'xs-cols--full',   'label' => __( 'XS Full', 'si-custom-elements' ) ),
-				array( 'value' => 'xs-cols--fit', 'label' => __( 'XS Fit', 'si-custom-elements' ) ),
-				array( 'value' => 'xs-cols--hug',  'label' => __( 'XS Hug', 'si-custom-elements' ) ),
-                array( 'value' => 'xs-cols--2',  'label' => __( 'XS 1/2', 'si-custom-elements' ) ),
-                array( 'value' => 'xs-cols--3',  'label' => __( 'XS 1/3', 'si-custom-elements' ) ),
-                array( 'value' => 'xs-cols--4',  'label' => __( 'XS 1/4', 'si-custom-elements' ) )
-	        )
-        )
-	),
-    'sm_class' => array(
-            'type'    => 'select',
-            'ui' => array(
-                'title'   => __( 'Width SM (481px - 767px)', 'si-custom-elements' ),
-            ),
-            'options' => array(
-                'choices' => array(
-                    array( 'value' => '',   'label' => __( '(inherit)', 'si-custom-elements' ) ),
-                    array( 'value' => 's-cols--full',   'label' => __( 'SM Full', 'si-custom-elements' ) ),
-                    array( 'value' => 's-cols--fit', 'label' => __( 'SM Fit', 'si-custom-elements' ) ),
-                    array( 'value' => 's-cols--hug',  'label' => __( 'SM Hug', 'si-custom-elements' ) ),
-                    array( 'value' => 's-cols--2',  'label' => __( 'SM 1/2', 'si-custom-elements' ) ),
-                    array( 'value' => 's-cols--3',  'label' => __( 'SM 1/3', 'si-custom-elements' ) ),
-                    array( 'value' => 's-cols--4',  'label' => __( 'SM 1/4', 'si-custom-elements' ) )
-                )
+                array( 'value' => 'l-cols--full',   'label' => __( 'LG Full', 'si-custom-elements' ) ),
+                array( 'value' => 'l-cols--fit', 'label' => __( 'LG Fit', 'si-custom-elements' ) ),
+                array( 'value' => 'l-cols--hug',  'label' => __( 'LG Hug', 'si-custom-elements' ) ),
+                array( 'value' => 'l-cols--2',  'label' => __( 'LG 1/2', 'si-custom-elements' ) ),
+                array( 'value' => 'l-cols--3',  'label' => __( 'LG 1/3', 'si-custom-elements' ) ),
+                array( 'value' => 'l-cols--4',  'label' => __( 'LG 1/4', 'si-custom-elements' ) )
             )
+        )
     ),
     'md_class' => array(
             'type'    => 'select',
@@ -89,21 +72,38 @@ return array(
                 )
             )
     ),
-    'lg_class' => array(
+    'sm_class' => array(
             'type'    => 'select',
             'ui' => array(
-                'title'   => __( 'Width LG (980px - 1199px)', 'si-custom-elements' ),
+                'title'   => __( 'Width SM (481px - 767px)', 'si-custom-elements' ),
             ),
             'options' => array(
                 'choices' => array(
                     array( 'value' => '',   'label' => __( '(inherit)', 'si-custom-elements' ) ),
-                    array( 'value' => 'l-cols--full',   'label' => __( 'LG Full', 'si-custom-elements' ) ),
-                    array( 'value' => 'l-cols--fit', 'label' => __( 'LG Fit', 'si-custom-elements' ) ),
-                    array( 'value' => 'l-cols--hug',  'label' => __( 'LG Hug', 'si-custom-elements' ) ),
-                    array( 'value' => 'l-cols--2',  'label' => __( 'LG 1/2', 'si-custom-elements' ) ),
-                    array( 'value' => 'l-cols--3',  'label' => __( 'LG 1/3', 'si-custom-elements' ) ),
-                    array( 'value' => 'l-cols--4',  'label' => __( 'LG 1/4', 'si-custom-elements' ) )
+                    array( 'value' => 's-cols--full',   'label' => __( 'SM Full', 'si-custom-elements' ) ),
+                    array( 'value' => 's-cols--fit', 'label' => __( 'SM Fit', 'si-custom-elements' ) ),
+                    array( 'value' => 's-cols--hug',  'label' => __( 'SM Hug', 'si-custom-elements' ) ),
+                    array( 'value' => 's-cols--2',  'label' => __( 'SM 1/2', 'si-custom-elements' ) ),
+                    array( 'value' => 's-cols--3',  'label' => __( 'SM 1/3', 'si-custom-elements' ) ),
+                    array( 'value' => 's-cols--4',  'label' => __( 'SM 1/4', 'si-custom-elements' ) )
                 )
             )
     ),
+    'xs_class' => array(
+		'type'    => 'select',
+        'ui' => array(
+			'title'   => __( 'Width XS (480px & Smaller)', 'si-custom-elements' ),
+		),
+        'options' => array(
+			'choices' => array(
+                array( 'value' => '',   'label' => __( '(inherit)', 'si-custom-elements' ) ),
+				array( 'value' => 'xs-cols--full',   'label' => __( 'XS Full', 'si-custom-elements' ) ),
+				array( 'value' => 'xs-cols--fit', 'label' => __( 'XS Fit', 'si-custom-elements' ) ),
+				array( 'value' => 'xs-cols--hug',  'label' => __( 'XS Hug', 'si-custom-elements' ) ),
+                array( 'value' => 'xs-cols--2',  'label' => __( 'XS 1/2', 'si-custom-elements' ) ),
+                array( 'value' => 'xs-cols--3',  'label' => __( 'XS 1/3', 'si-custom-elements' ) ),
+                array( 'value' => 'xs-cols--4',  'label' => __( 'XS 1/4', 'si-custom-elements' ) )
+	        )
+        )
+	),
 );
