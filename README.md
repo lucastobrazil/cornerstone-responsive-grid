@@ -1,6 +1,9 @@
 # Cornerstone Responsive Grid
 A Custom Element for X Theme's Cornerstone editor that lets you control _how_ the grid layout responds to screen width. Similar to Bootstrap's grid layout (but using flex!).
 
+
+Please give feedback  via: https://trello.com/b/LcQiYCo3/cs-responsive-grid
+
 ![alt_text](https://github.com/lucastobrazil/cornerstone-responsive-grid/blob/master/src/images/csrg_shot1b.png "Screenshot")
 
 # What it does
