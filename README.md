@@ -21,6 +21,13 @@ For the `grid` itself, you can set:
 - Horizontal Alignment of `grid-items`
 - Toggle grid padding/gutters on or off
 
+# The Breakpoints
+The media query breakpoints are the same as the CS Editor breakpoints (ie. when you change preview modes in Cornerstone).
+- Large (980px - 1199px)
+- Medium (768px - 979px)
+- Small (481px - 767px)
+- Extra Small (480px and smaler)
+
 # Responsive, You Say?
 After specifying the default width (desktop-first) for each `grid-item`, you can add screen size-specific widths.
 
