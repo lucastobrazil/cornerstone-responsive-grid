@@ -21,17 +21,17 @@ For the `grid` itself, you can set:
 - Horizontal Alignment of `grid-items`
 - Toggle grid padding/gutters on or off
 
+# Responsive, You Say?
+After specifying the default width (desktop-first) for each `grid-item`, you can add screen size-specific widths.
+
+For example: "I want this column to be 1/4 wide on desktop, but go 1/2 width on tablets, then go full width on mobile.
+
 # The Breakpoints
 The media query breakpoints are the same as the CS Editor breakpoints (ie. when you change preview modes in Cornerstone).
 - Large (980px - 1199px)
 - Medium (768px - 979px)
 - Small (481px - 767px)
 - Extra Small (480px and smaler)
-
-# Responsive, You Say?
-After specifying the default width (desktop-first) for each `grid-item`, you can add screen size-specific widths.
-
-For example: "I want this column to be 1/4 wide on desktop, but go 1/2 width on tablets, then go full width on mobile.
 
 # It's nothing new
 These items are basically just using CSS3's "flex" properties, but organised in a way that lets you think more about the BEHAVIOUR of the layout and less about writing (and repeating) CSS for layout. 
