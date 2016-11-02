@@ -1,5 +1,5 @@
 # Cornerstone Responsive Grid
-![alt_text](https://github.com/lucastobrazil/cornerstone-responsive-grid/blob/master/src/images/csrg_logo.png "Logo")
+<img src="https://github.com/lucastobrazil/cornerstone-responsive-grid/blob/master/src/images/csrg_logo.png" width="150" height="150" />
 
 A Custom Element for X Theme's Cornerstone editor that lets you control _how_ the grid layout responds to screen width. Similar to Bootstrap's grid layout (but using flex!).
 
